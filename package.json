@@ -1,0 +1,12 @@
+{
+  "name": "vue-no-build",
+  "description": "Vue example app without build dependencies",
+  "about": "This file is only needed to serve the files in localhost. Not needed in production server.",
+  "version": "1.0",
+  "scripts": {
+    "serve": "npm i && browser-sync start --server 'src' --files 'src' --single"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}

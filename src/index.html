@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Hello Vue!</title>
+
+    <link href="/assets/favicon.ico" rel="icon" />
+
+    <!-- Styles-->
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <!-- Vue CDN -->
+    <!-- Latest version for development: https://unpkg.com/vue@next -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.prod.js"></script>
+
+    <!-- App -->
+    <script src="/app.js" type="module"></script>
+
+    <!--
+      To prevent waterfall-loading, we preload
+      all the JS Module files of our application.
+    -->
+    <link rel="modulepreload" href="/layouts/MainLayout.js">
+    <link rel="modulepreload" href="/components/Main.js">
+
+    <!-- htm (render html tag) -->
+    <link rel="modulepreload" href="https://unpkg.com/htm@3.0.4/dist/htm.module.js?module">
+    <link rel="modulepreload" href="/utils/html.js">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
